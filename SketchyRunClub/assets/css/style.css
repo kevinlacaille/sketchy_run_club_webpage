@@ -291,6 +291,25 @@ h1, h2, h3, h4, h5, h6, .font-primary {
   background: #C39BD3;
 }
 
+#hero .php-email-form button[type="button"] {
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 8px 30px;
+  border-radius: 50px;
+  transition: 0.5s;
+  margin: 10px;
+  border: none;
+  color: rgb(0, 0, 0);
+  background: #EBDEF0;
+}
+
+#hero .php-email-form button[type="button"]:hover {
+  background: #C39BD3;
+}
+
 @media (min-width: 1024px) {
   #hero {
     background-attachment: fixed;
@@ -601,6 +620,25 @@ section {
 .add:hover, .create-event:hover, .add-event:hover{
   color:#C39BD3 !important;
   border-color: #C39BD3 !important;
+}
+
+/*--------------------------------------------------------------
+# Google Sheets
+--------------------------------------------------------------*/
+.google-sheets{
+  text-align: center;
+  overflow:hidden;
+  padding-bottom:56.25%;
+  position:relative;
+  height:0;
+}
+.google-sheets iframe{
+  text-align: center;
+  left:0;
+  top:0;
+  height:50%;
+  width:50%;
+  position:absolute;
 }
 
 /*--------------------------------------------------------------
