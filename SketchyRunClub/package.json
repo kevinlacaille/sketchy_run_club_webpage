@@ -1,0 +1,23 @@
+{
+  "name": "sketchy-run-club-webpage",
+  "version": "0.0.2",
+  "description": "Sketchy Run Club's webpage",
+  // "homepage": "https://sketchyrunclub.ca",
+  "homepage": "https://youthful-cray-3520c5.netlify.app/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kevinlacaille/sketchy_run_club_webpage.git"
+  },
+  "author": {
+    "name": "Kevin Lacaille",
+    "email": "kevinlacaille@gmail.com",
+    "url": "http://lacaille.dev"
+  },
+  "main": "assets/js/main.js",
+  "scripts": {
+    "build-project": "bundle exec jekyll build"
+  },
+  "dependencies": {
+    "googleapis": "^39.2.0"
+  }
+}

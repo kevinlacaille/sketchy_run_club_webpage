@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Sketchy Run Club</title>
+  <meta content="" name="descriptison">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <!-- <link href="assets/img/favicon.png" rel="icon"> -->
+  <!-- <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon"> -->
+  <link rel="icon" href="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/160/apple/237/runner_1f3c3.png">
+  <link rel="apple-touch-icon" href="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/160/apple/237/runner_1f3c3.png">
+  
+  
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Siimple - v2.1.0
+  * Template URL: https://bootstrapmade.com/free-bootstrap-landing-page/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header">
+    <div class="container-fluid">
+
+      <div class="logo float-left">
+        <h1 class="text-dark"> <span>Your anti-workout run club.</span></h1>
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+      </div>
+
+      <button type="button" class="nav-toggle"><i class="bx bx-menu"></i></button>
+      <nav class="nav-menu">
+        <ul>
+          <li class="active"><a href="#header">Home</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#calendar">Run Schedule</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+          <li><a href="login.html">Log In</a></li>
+        </ul>
+      </nav><!-- .nav-menu -->
+
+    </div>
+  </header><!-- End #header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero">
+    <div class="hero-container">
+      <h1>Sketchy Run Club</h1>
+      <h2>Sign up for a run!</h2>
+
+
+      
+      <form name="submit-to-google-sheet" action="forms/notify.php" method="post" role="form" class="php-email-form">
+        <div class="row no-gutters">
+
+
+            <div class="col-md-4 form-group pr-md-1">
+              <select id="select" class="form-control form-control-md" required>
+                <option value="">Select a date</option>
+                <option value="1">Wednesday August 19</option>
+                <option value="2">Wednesday August 26</option>
+                <option value="3">Wednesday September 2</option>
+              </select>
+              <div class="validate"></div>
+            </div>
+  
+          <div class="col-md-4 form-group pr-md-1">
+            <input type="text" name="name" class="form-control" id="name" placeholder="Your Sketchy Name" data-rule="minlen:2" data-msg="Too sketchy... Please enter at least 2 letters" />
+            <div class="validate"></div>
+          </div>
+          <div class="col-md-4 form-group pl-md-1">
+            <input type="email" class="form-control" name="email" id="email" placeholder="Your Sketchy Email" data-rule="email" data-msg="Too sketchy... Please enter a valid email" />
+            <div class="validate"></div>
+          </div>
+        </div>
+
+        <div class="mb-1">
+          <div class="loading">Signing you up...</div>
+          <!-- <div class="error-message"></div> -->
+          <div class="sent-message">Thanks for signing up!</div>
+        </div>
+        <div class="text-center"><button type="submit">Sign me up!</button></div>
+      </form>
+
+      <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzOcli5fUEKtMDlZ1N3rBXAru9JR4-06JCQC_j8f762zpJikHvy/exec'
+        const form = document.forms['submit-to-google-sheet']
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => console.log('Success!', response))
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+
+    </div>
+  </section><!-- #hero -->
+
+  <main id="main">
+
+    <section id="calendar" class="calendar">
+
+      <div class="section-title">
+        <h2>Run Schedule</h2>
+      </div>
+
+      <div class="container">
+        <iframe class="airtable-embed" 
+                src="https://airtable.com/embed/shrQiiaS4s225bSS4?backgroundColor=purpleLight" 
+                frameborder="0" 
+                onmousewheel="" 
+                width="100%" 
+                height="533" 
+                style="background: transparent; border: 0px solid #ccc;">
+          </iframe>
+        <!-- <iframe 
+          src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=America%2FToronto&amp;src=cnM0MThyam02MTJybDFmczhtcHVvczR0cmtAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;color=%23F4511E&amp;showTitle=0&amp;showNav=0&amp;showDate=1&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0" 
+          style="border:0 1px #777" 
+          width="800" 
+          height="600" 
+          frameborder="0" 
+          scrolling="no">
+        </iframe> -->
+      </div>
+      
+    </section>
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+
+      <div class="section-title">
+        <h2>About us</h2>
+      </div>
+
+      <div class="container">
+
+        <div class="row">
+          <div class="col-lg-6">
+            <img src="assets/img/SRC/SRC_Logo2_crop.JPG" class="img-fluid" alt="SRC logo" loading="lazy">
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0">
+            <h3>Hamilton's sketchiest runners.</h3>
+            <ul>
+              <li>🌴 Absolutely no expectations.</li>
+              <li> 🦥 Come as you are.</li>
+              <li>☀️ Join when you can.</li>
+            </ul>
+            <p>
+              We are a mess of a run club.<br><br>
+              We are a mix of seasoned joggers and ones who are much-less seasoned (hi, it me). We welcome ALL levels.<br><br>
+              We are informal in our gatherings. Our rule is that if we're 2+ runners, we're a group! 🙂 <br><br>
+              We will meet up outside of Durand Coffee for 3 km or 5km runs (or walk-run) on Wednesday nights around 8:00 p.m., then celebrate with a drink at a nearby bar. Routes/bars to be pre-posted.<br><br>
+              Most importantly, we want to focus on FUN THEN RUN (then fun again with a celebratory drink).
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Section -->
+
+    <!-- ======= Contact Us Section ======= -->
+    <section id="contact" class="contact section-bg">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Contact</h2>          
+            <p>Interested? Hit us up! <a href="mailto:sketchyrunclub@gmail.com">sketchyrunclub@gmail.com</a></p>
+
+            <div class="social-links">
+              <a href="https://www.facebook.com/groups/sketchyrunclub/" class="instagram"><i class="bx bxl-instagram"></i></a>      
+              <a href="https://www.facebook.com/groups/sketchyrunclub/" class="facebook"><i class="bx bxl-facebook"></i></a>
+              <a href="https://www.sketchylaura.com/shop/sketchy-run-club-sweaters" class="store"><i class="bx bx-store"></i></a>
+            </div>
+          
+        </div>
+    </section>
+  </main>
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>MyResume</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: [license-url] -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/free-html-bootstrap-template-my-resume/ -->
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/jquery/jquery.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
