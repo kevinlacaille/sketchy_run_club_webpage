@@ -41,20 +41,20 @@
   <header id="header">
     <div class="container-fluid">
 
-      <div class="logo float-left">
-        <h1 class="text-dark"> <span>Your anti-workout run club.</span></h1>
+      <!-- <div class="logo float-left"> -->
+        <!-- <h1 class="text-dark"> <span>Your anti-workout run club.</span></h1> -->
         <!-- Uncomment below if you prefer to use an image logo -->
         <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
-      </div>
+      <!-- </div> -->
 
       <button type="button" class="nav-toggle"><i class="bx bx-menu"></i></button>
       <nav class="nav-menu">
         <ul>
           <li class="active"><a href="#header">Home</a></li>
-          <li><a href="#about">About Us</a></li>
           <li><a href="#calendar">Run Schedule</a></li>
+          <li><a href="#about">About Us</a></li>
           <li><a href="#contact">Contact Us</a></li>
-          <li><a href="login.html">Log In</a></li>
+          <!-- <li><a href="login.html">Log In</a></li> -->
         </ul>
       </nav><!-- .nav-menu -->
 
@@ -65,10 +65,11 @@
   <section id="hero">
     <div class="hero-container">
       <h1>Sketchy Run Club</h1>
-      <h2>Sign up for a run!</h2>
+      <h2 class="text-dark"> <span>Your anti-workout run club.</span></h2>
+      <!-- <h2>Sign up for a run!</h2> -->
 
 
-      
+<!--       
       <form name="submit-to-google-sheet" action="forms/notify.php" method="post" role="form" class="php-email-form">
         <div class="row no-gutters">
 
@@ -95,7 +96,6 @@
 
         <div class="mb-1">
           <div class="loading">Signing you up...</div>
-          <!-- <div class="error-message"></div> -->
           <div class="sent-message">Thanks for signing up!</div>
         </div>
         <div class="text-center"><button type="submit">Sign me up!</button></div>
@@ -111,7 +111,7 @@
             .then(response => console.log('Success!', response))
             .catch(error => console.error('Error!', error.message))
         })
-      </script>
+      </script> -->
 
     </div>
   </section><!-- #hero -->
@@ -125,6 +125,13 @@
       </div>
 
       <div class="container">
+        <h3 style="text-align:center">
+          <span>Check out our <a href="https://www.instagram.com/sketchyrunclub/" class="instagram"><i class="bx bxl-instagram"></i></a> for the next pop-up run!</span>
+        </h3>
+        <!-- curl -X GET "https://graph.facebook.com/v8.0/instagram_oembed?url=https://www.instagram.com/p/CF7FELolBNY/&access_token=baff3195618be790204bdbf8a455ce06"     -->
+
+
+<!--         
         <iframe class="airtable-embed" 
                 src="https://airtable.com/embed/shrQiiaS4s225bSS4?backgroundColor=purpleLight" 
                 frameborder="0" 
@@ -132,7 +139,7 @@
                 width="100%" 
                 height="533" 
                 style="background: transparent; border: 0px solid #ccc;">
-          </iframe>
+          </iframe> -->
         <!-- <iframe 
           src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=America%2FToronto&amp;src=cnM0MThyam02MTJybDFmczhtcHVvczR0cmtAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;color=%23F4511E&amp;showTitle=0&amp;showNav=0&amp;showDate=1&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0" 
           style="border:0 1px #777" 
@@ -167,10 +174,10 @@
             </ul>
             <p>
               We are a mess of a run club.<br><br>
-              We are a mix of seasoned joggers and ones who are much-less seasoned (hi, it me). We welcome ALL levels.<br><br>
-              We are informal in our gatherings. Our rule is that if we're 2+ runners, we're a group! 🙂 <br><br>
-              We will meet up outside of Durand Coffee for 3 km or 5km runs (or walk-run) on Wednesday nights around 8:00 p.m., then celebrate with a drink at a nearby bar. Routes/bars to be pre-posted.<br><br>
-              Most importantly, we want to focus on FUN THEN RUN (then fun again with a celebratory drink).
+              We are a mix of seasoned joggers and ones who are much-less seasoned. We welcome ALL levels.<br><br>
+              We are informal in our gatherings. Our rule is that if we're 2+ runners, we're a group! <br><br>
+              We will usually meet up outside of a coffee shop or brewery for 3km or 5km runs (or walk-run). Routes and meet-up location are pre-posted on our Instagram.<br><br>
+              Most importantly, we want to focus on FUN THEN RUN (then fun again with a celebratory drink ☕/🍺/🚰/whatever).
             </p>
           </div>
         </div>
@@ -187,9 +194,9 @@
             <p>Interested? Hit us up! <a href="mailto:sketchyrunclub@gmail.com">sketchyrunclub@gmail.com</a></p>
 
             <div class="social-links">
-              <a href="https://www.facebook.com/groups/sketchyrunclub/" class="instagram"><i class="bx bxl-instagram"></i></a>      
+              <a href="https://www.instagram.com/sketchyrunclub/" class="instagram"><i class="bx bxl-instagram"></i></a>      
               <a href="https://www.facebook.com/groups/sketchyrunclub/" class="facebook"><i class="bx bxl-facebook"></i></a>
-              <a href="https://www.sketchylaura.com/shop/sketchy-run-club-sweaters" class="store"><i class="bx bx-store"></i></a>
+              <a href="https://www.sketchylaura.com/shop?category=sketchy+run+club/" class="store"><i class="bx bx-store"></i></a>
             </div>
           
         </div>
