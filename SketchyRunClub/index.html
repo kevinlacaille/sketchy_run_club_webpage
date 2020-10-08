@@ -68,13 +68,26 @@
       <h2>Sign up for a run!</h2>
 
 
+      
       <form name="submit-to-google-sheet" action="forms/notify.php" method="post" role="form" class="php-email-form">
         <div class="row no-gutters">
-          <div class="col-md-6 form-group pr-md-1">
+
+
+            <div class="col-md-4 form-group pr-md-1">
+              <select id="select" class="form-control form-control-md" required>
+                <option value="">Select a date</option>
+                <option value="1">Wednesday August 19</option>
+                <option value="2">Wednesday August 26</option>
+                <option value="3">Wednesday September 2</option>
+              </select>
+              <div class="validate"></div>
+            </div>
+  
+          <div class="col-md-4 form-group pr-md-1">
             <input type="text" name="name" class="form-control" id="name" placeholder="Your Sketchy Name" data-rule="minlen:2" data-msg="Too sketchy... Please enter at least 2 letters" />
             <div class="validate"></div>
           </div>
-          <div class="col-md-6 form-group pl-md-1">
+          <div class="col-md-4 form-group pl-md-1">
             <input type="email" class="form-control" name="email" id="email" placeholder="Your Sketchy Email" data-rule="email" data-msg="Too sketchy... Please enter a valid email" />
             <div class="validate"></div>
           </div>
